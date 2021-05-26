@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang ="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content = "IE=edge">
+<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+<link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css" />
+<script src="lib/jquery-1.11.1.min.js"></script>
+<script src="lib/jquery.mobile-1.4.5.min.js"></script>
+<script src="lib/jquery.mobile-1.4.5.min.map"></script>
+<title>My first mobile app</title>
+<script>
+            function calculerIMC(){
+                let height = Number(taille.value);
+                let weight = Number(poids.value);
+
+                let msg, imc = weight / Math.pow(height, 2);
+                if(imc< 16.5){
+                    msg= "denutrition ou anorexie"
+                }
+                else if (imc >= 16.5 && imc < 18.5)
+                {
+                    msg= "maigreur";
+                }
+                else if (imc >= 18.5 && imc < 25)
+                {
+                    msg= "poids normal";
+                }
+                else if (imc >= 25 && imc < 30)
+                {
+                    msg= "surpoids";
+                }
+                else if (imc >= 30 && imc < 35)
+                {
+                    msg= "obesite modere";
+                }
+                else if (imc >= 35 && imc < 40)
+                {
+                    msg= "obesite severe";
+                }
+                else
+                {
+                    msg= "obesite massive";
+                }
+                resultat.innerHTML = "Vous etes en etat de :"+ msg;
+            }
+        </script>
+</head>
+<body>
+<div data-role = "page">
+    <div data-role = "header"  data-theme="b" >
+        <h1>My first app-mobile </h1>
+    </div>
+    <div role= "main" class= "ui-content">
+        <form>
+            <label for ="taille">Taille</label>
+            <input type="text" id="taille">
+            <label for ="poids">Poids</label>
+            <input type="text" id="poids">
+            <button onclick="calculerIMC()">Calculer IMC</button>
+            <label id = "resultat"></label>
+        </form>
+    </div>
+    <div data-role = "footer" data-position = "fixed">
+        <h1>DIC3 &copy; All rights reserved </h1>
+    </div>
+</div>
+</body>
+</html>

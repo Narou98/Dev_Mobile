@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+		<link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css" />
+		<script src="lib/jquery-1.11.1.min.js"></script>
+        <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+        <script src="lib/jquery.mobile-1.4.5.min.map"></script>
+		<script src="cordova.js"></script>
+	    <script src="js/index.js"></script> 
+        <title>Mes contacts</title>
+    </head>
+    <body>
+	
+        <div id="contact-list" data-role="page">
+		
+			<div data-role="header">
+				<h1>Mes contacts</h1>
+            </div>
+			<div data-role="content">
+				<ul id="contactList" data-role="listview" data-insert="True" data-filter="true">	
+						
+					<li>
+						<a href="#contact-show">
+							<img src="img/contact.PNG">
+							<h1>Fatou BA</h1>
+							<p>77 123 45 22</p>
+						</a>	
+					</li>
+					
+					<li>
+						<a href="#contact-show1">
+							<img src="img/contact.PNG">
+							<h1>Emilie Fall</h1>
+							<p>77 123 45 22</p>
+						</a>	
+					</li>
+						
+					
+						
+					<li>
+						<a href="#contact-show2">
+							<img src="img/contact.PNG">
+							<h1>Babacar Diop </h1>
+							<p>77 123 45 21</p>
+						</a>	
+					</li>
+					
+					<li>
+						<a href="#contact-show3">
+							<img src="img/contact.PNG">
+							<h1>Khady Gueye </h1>
+							<p>77 128 12 22</p>
+						</a>	
+					</li>
+					
+					<li>
+						<a href="#contact-show4">
+							<img src="img/contact.PNG">
+							<h1>Aissatou Gueye </h1>
+							<p>77 123 45 22</p>
+						</a>	
+					</li>
+					<li>
+						<a href="#contact-show">
+							<img src="img/contact.PNG">
+							<h1>Fatou BA</h1>
+							<p>77 123 45 22</p>
+						</a>	
+					</li>
+					<li>
+						<a href="#contact-show">
+							<img src="img/contact.PNG">
+							<h1>Fatou BA</h1>
+							<p>77 123 45 22</p>
+						</a>	
+					</li>
+				</ul>
+				
+            </div>
+			<div data-role="footer" data position="fixed">
+				<h1>Mes contacts &copy; Mars 2021 </h1>
+				</div>
+         </div>
+		  <div id="contact-show" data-role="page">
+		
+			<div data-role="header">
+				<h1>Détails du contatc </h1>
+            </div>
+			<div data-role="content">
+				<ul  data-role="listview" data-insert="true">	
+					<li>
+							<img src="img/contact.PNG">
+							<h1> Nom du contact </h1>
+							<p id="contactName">Fatou BA</p>
+					</li>
+					<li>
+							
+							<h1> Telephone </h1>
+							<p id="contactNumber">77 123 45 22</p>
+					</li>
+					<li>
+							
+							<h1> Emails </h1>
+							<p id="contactEmail">Fatouba11@gmail.com</p>
+					</li>
+					<li>
+							
+							<h1> Adresse </h1>
+							<p id="contactEmail">Hann Marsiste</p>
+					</li>
+					<li>
+							
+							<h1> Organisation</h1>
+							<p>Ecole Superieure Polytechnique </p>
+					</li>
+				</ul>	
+            </div>
+			<div data-role="footer" data position="fixed">
+				<h1>Mes contacts &copy; Mars 2021 </h1>
+            </div>
+		  </div>
+		   <div id="contact-show1" data-role="page">
+		
+			<div data-role="header">
+				<h1>Détails du contact</h1>
+            </div>
+			<div data-role="content">
+				<ul  data-role="listview" data-insert="true">	
+					<li>
+							<img src="img/contact.PNG">
+							<h1> Nom du contact </h1>
+							<p id="contactName">Emilie Fall</p>
+					</li>
+					<li>
+							
+							<h1> Telephone </h1>
+							<p id="contactNumber">77 123 67 21 </p>
+					</li>
+					<li>
+							
+							<h1> Emails </h1>
+							<p id="contactEmail">babacar@gmail.com</p>
+					</li>
+					<li>
+							
+							<h1> Adresse </h1>
+							<p id="contactEmail">Sud-Foire</p>
+					</li>
+					<li>
+							
+							<h1> Organisation</h1>
+							<p>Ecole Superieure Polytechnique </p>
+					</li>
+				</ul>	
+            </div>
+			<div data-role="footer" data position="fixed">
+				<h1>Mes contacts &copy; Mars 2021 </h1>
+            </div>
+		  </div>
+		   <div id="contact-show2" data-role="page">
+		
+			<div data-role="header">
+				<h1>Détails du contact</h1>
+            </div>
+			<div data-role="content">
+				<ul  data-role="listview" data-insert="true">	
+					<li>
+							<img src="img/contact.PNG">
+							<h1> Nom du contact </h1>
+							<p id="contactName">Babacar Diop</p>
+					</li>
+					<li>
+							
+							<h1> Telephone </h1>
+							<p id="contactNumber">77 123 67 21 </p>
+					</li>
+					<li>
+							
+							<h1> Emails </h1>
+							<p id="contactEmail">babacar@gmail.com</p>
+					</li>
+					<li>
+							
+							<h1> Adresse </h1>
+							<p id="contactEmail">Sud-Foire</p>
+					</li>
+					<li>
+							
+							<h1> Organisation</h1>
+							<p>Ecole Superieure Polytechnique </p>
+					</li>
+				</ul>	
+            </div>
+			<div data-role="footer" data position="fixed">
+				<h1>Mes contacts &copy; Mars 2021 </h1>
+            </div>
+		  </div>
+		  
+		   <div id="contact-show3" data-role="page">
+		
+			<div data-role="header">
+				<h1>Détails du contatc </h1>
+            </div>
+			<div data-role="content">
+				<ul  data-role="listview" data-insert="true">	
+					<li>
+							<img src="img/contact.PNG">
+							<h1> Nom du contact </h1>
+							<p id="contactName">Khady Gueye</p>
+					</li>
+					<li>
+							
+							<h1> Telephone </h1>
+							<p id="contactNumber">77 123 45 23</p>
+					</li>
+					<li>
+							
+							<h1> Emails </h1>
+							<p id="contactEmail">KhadyG11@gmail.com</p>
+					</li>
+					<li>
+							
+							<h1> Adresse </h1>
+							<p id="contactEmail">Almadie</p>
+					</li>
+					<li>
+							
+							<h1> Organisation</h1>
+							<p>Ecole Superieure Polytechnique </p>
+					</li>
+				</ul>	
+            </div>
+			<div data-role="footer" data position="fixed">
+				<h1>Mes contacts &copy; Mars 2021 </h1>
+            </div>
+		  </div>
+		   <div id="contact-show4" data-role="page">
+		
+			<div data-role="header">
+				<h1>Détails du contatc </h1>
+            </div>
+			<div data-role="content">
+				<ul  data-role="listview" data-insert="true">	
+					<li>
+							<img src="img/contact.PNG">
+							<h1> Nom du contact </h1>
+							<p id="contactName">Aissatou Cisse</p>
+					</li>
+					<li>
+							
+							<h1> Telephone </h1>
+							<p id="contactNumber">77 123 45 22</p>
+					</li>
+					<li>
+							
+							<h1> Emails </h1>
+							<p id="contactEmail">aissatouC@gmail.com</p>
+					</li>
+					<li>
+							
+							<h1> Adresse </h1>
+							<p id="contactEmail">Sipres</p>
+					</li>
+					<li>
+							
+							<h1> Organisation</h1>
+							<p>Ecole Superieure Polytechnique </p>
+					</li>
+				</ul>	
+            </div>
+			<div data-role="footer" data position="fixed">
+				<h1>Mes contacts &copy; Mars 2021 </h1>
+            </div>
+		  </div>
+        
+    </body>
+</html>
